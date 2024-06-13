@@ -1,0 +1,332 @@
+/*The order of the CSS is in the order I worked on it.*/
+body {
+  background-color: #f6f5f1;
+  margin: 0;
+}
+main {
+  /*You helped me work on this part which made it much easier to work with. I didn't realize you could name the sections titles. It makes it much easier to quickly grid.*/
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-areas:
+    "header header header"
+    "services placeholder about";
+}
+/*I chose this font because it looks really sleek and compliments the minimalistic design of the website.*/
+.red-hat {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/*Rectangle 1 is the frame where the first image on the portfolio page goes.*/
+.rectangle1 {
+  height: 200px;
+  width: 350px;
+  background-color: #ffffff00;
+  display: grid;
+  grid-area: 2/1/2/2;
+  margin-left: 50px;
+  margin-top: 100px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+/*This rectangle is the one which is to the right of the 1st picture on the portfolio page.*/
+.rectangle2 {
+  height: 200px;
+  width: 350px;
+  background-color: #555;
+  display: grid;
+  grid-area: 2/2/2/2;
+  margin-top: 100px;
+  margin-left: 0px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+/*This rectangle is the one underneath the 1st picture on the portfolio page.*/
+.rectangle3 {
+  height: 200px;
+  width: 350px;
+  background-color: #555;
+  display: grid;
+  grid-area: 3/1/3/3;
+  margin-top: 30px;
+  margin-left: 50px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+.rectangle4 {
+  height: 200px;
+  width: 350px;
+  background-color: #555;
+  display: grid;
+  grid-area: 3/2/3/3;
+  margin-top: 30px;
+  margin-left: 0px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+
+.rectangle5 {
+  height: 600px;
+  width: 382px;
+  background-color: #555;
+  display: grid;
+  grid-area: 5/1/5/5;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+
+.rectangle6 {
+  height: 250px;
+  width: 351px;
+  background-color: #555;
+  display: grid;
+  grid-area: 5/2/5/5;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+
+.rectangle7 {
+  height: 300px;
+  width: 250px;
+  background-color: #000000;
+  display: grid;
+  grid-area: 5/2/5/5;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 300px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+.rectangle8 {
+  height: 300px;
+  width: 250px;
+  background-color: #000000;
+  display: grid;
+  grid-area: 5/2/5/5;
+  margin-left: 315px;
+  margin-bottom: 50px;
+  margin-top: 300px;
+  overflow: hidden;
+  stroke: 5px;
+  border: #000000 2px outset;
+}
+/*I made the header this color so it would look like the footer is layered back further than the body and header. I liked this layout and its how I made it on figma. */
+header {
+  background-color: #f6f5f1;
+  margin-left: 50px;
+  grid-area: header;
+}
+
+/*Font size, weight, and vertical writing on the home page.*/
+.about {
+  font-size: 30px;
+  font-weight: 300;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  grid-column: 3/3;
+  grid-row: 3/3;
+  margin-right: 170px;
+  margin-top: 120px;
+  grid-area: about;
+}
+/*Dot is the button with the arrow on the home page.*/
+.dot {
+  display: grid;
+  height: 100px;
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  grid-column: 3/3;
+  grid-row: 3/2;
+  margin-left: 290px;
+  margin-top: 230px;
+}
+/*Arrow is the arrow image on the home page. I had to give it some margin so it would be perfectly centered because the arrow in the image file is not perfectly centered.*/
+.arrow {
+  display: flex;
+  transform: rotate(180deg);
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-right: 0px;
+}
+/*Services is the list of types of writing I can do.*/
+.services {
+  font-size: 30px;
+  font-weight: 300;
+  line-break: auto;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  padding-left: 50px;
+  grid-area: services;
+  margin-top: 120px;
+  list-style-type: none;
+}
+/*Daniel Munera is the h1 on the home page.*/
+.Daniel-Munera {
+  font-weight: 300;
+  font-size: 50px;
+  text-align: start;
+  grid-column: 2/3;
+}
+h1 {
+  font-weight: 300;
+  font-size: 50px;
+  text-align: start;
+}
+/*I wanted some of the h2s to be consistent. I couldn't do this for the h1s because the h1s had different margins on different pages.*/
+h2 {
+  font-weight: 300;
+  font-size: 35px;
+  padding-left: 50px;
+}
+/*I set a min height so it would always have enough room for the icons. I put space between the icons and the text with my email instead of space between all the individual icons. I made the background white so it could make the light tan stand out. I used padding instead of margin so the ends of the footer would reach the ends of the page.*/
+footer {
+  text-align: end;
+  min-height: 400 px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 27px;
+  font-weight: 300;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*Space between is for the resume and the rest of the nav items.*/
+.menu {
+  margin-right: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+/*Placeholder is the picture of myself. You helped me craete the placeholder are for the grid. */
+.placeholder {
+  border: #000000 1px outset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-area: 2/2/2/3;
+  overflow: hidden;
+  padding-right: 40px;
+}
+/*social media icons.*/
+.icons {
+  width: 13vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+/*Instead of targeting all the icons as a ground, I got some help from Alex to indicate I wanted padding on the individual icons.*/
+.icons > a {
+  margin-right: 10px;
+}
+/*Contatct is my email address on the footer. I didn't need to format the text's style because its the default for the page.*/
+.contact {
+  margin-bottom: 20px;
+}
+.relevant-courses-title {
+  display: grid;
+  grid-column: 1/1;
+}
+.relevant-courses {
+  margin-left: 50px;
+  display: grid;
+  grid-area: 4/1/4/4;
+}
+.Resume-download {
+  display: grid;
+  grid-area: about;
+}
+.about-me-title {
+  margin-left: 50px;
+  display: grid;
+  grid-area: 1/1/1/3;
+}
+.aboutparagraph {
+  display: grid;
+  grid-area: 2/1/2/3;
+  margin-left: 50px;
+}
+.hobbies-title {
+  display: grid;
+  grid-area: 3/3/3/4;
+}
+.hobbies {
+  display: grid;
+  grid-area: 4/3/4/4;
+  margin-left: 50px;
+}
+p {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+ul {
+  font-size: 21px;
+  font-weight: 300;
+}
+/*h2 of Writing samples from my portfolio.*/
+.writing {
+  display: grid;
+  grid-area: 2/1/2/2;
+}
+/*h2 title of indesign portfolio.*/
+.InDesign-Portfolio {
+  display: grid;
+  grid-area: 4/1/4/4;
+}
+/*Originally, I called this butterfly because I made an instructional document on how to fold an origami butterfly and put it on the portfolio page, however I decided I wanted to use other images for my portfolio. Now this tells the image of my resume to be in the middle of the page.*/
+.screenshotbutterfly {
+  border: 2px solid #555;
+  display: grid;
+  grid-area: 2/2/3/3;
+}
+/*This is the download button for my resume*/
+.Download {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 54px;
+}
+.Portfolio-title {
+  margin-left: 50px;
+}
+/*I originally called this download proposal because its a 15 page proposal I wrote when I was a comm major. Its good if I want a job being a grant writer so I wanted to highlight it, but then decided to change this to just be "download my portfolio."*/
+.Download-proposal {
+  display: grid;
+  grid-area: 2/3/3/4;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 35px;
+  font-weight: 300;
+}
+.Resume-title {
+  margin-left: 50px;
+}
+.church {
+  overflow: hidden;
+  width: 300px;
+  height: auto;
+  display: grid;
+  grid-area: 4/3/5/5;
+  margin-left: 50px;
+  border: #000000 2px outset;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
