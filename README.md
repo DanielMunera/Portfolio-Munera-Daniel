@@ -1,3 +1,3 @@
-I created a portfolio website for myself while taking Technical Communication class 3200: Information Design for Electronic Media at UNT.
+I created this portfolio website while taking Technical Communication class 3200: Information Design for Electronic Media at UNT.
 
-Find my portfolio samples by downloading "portfolio.zip".
+To view my portfolio work samples, Download "portfolio.zip".
